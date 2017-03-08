@@ -37,9 +37,9 @@ public abstract class DemoBase extends FragmentActivity {
         return (float) (Math.random() * range) + startsfrom;
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        overridePendingTransition(R.anim.move_left_in_activity, R.anim.move_right_out_activity);
-//    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.move_left_in_activity, R.anim.move_right_out_activity);
+    }
 }
